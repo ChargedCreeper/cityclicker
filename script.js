@@ -566,7 +566,7 @@ var time = function() {
   var start = new Date();
   city.update(true);
   city.day++;
-  setTimeout(time, Math.max(1000 - (new Date() - start), 100));
+  setTimeout(time, Math.max(100 - (new Date() - start), 100));
 };
 setTimeout(time, 1000);
 })();
