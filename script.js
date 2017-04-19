@@ -20,6 +20,7 @@ var format = function(amount, symbol) {
 
 var formatTime = function(city, cost) {
   var time = Math.max(0, Math.ceil((cost - city.currency) / city.tax));
+  time = time / 2;
   return format(time, time == 1 ? ' second' : ' seconds');
 }
 
